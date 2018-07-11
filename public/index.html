@@ -49,6 +49,18 @@
   <script src="js/payload.js"></script>
   <script src="js/global.js"></script>
   <script src="js/analytics.js"></script>
+  <script>
+function yesAnswer() {
+var latestResponse = Api.getResponsePayload();
+var context = latestResponse.context;
+Api.sendRequest("yes", context);
+}
+function noAnswer() {
+var latestResponse = Api.getResponsePayload();
+var context = latestResponse.context;
+Api.sendRequest("no", context);
+}
+</script>
 </body>
 
 </html>
