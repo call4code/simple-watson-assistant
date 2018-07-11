@@ -1,6 +1,6 @@
 ---
 declared-services:
-  my-watson-assistant-service:
+  Call for Code Dev:
     label: conversation
     plan: free
 applications:
@@ -10,6 +10,6 @@ applications:
   memory: 256M
   instances: 1
   services:
-  - my-watson-assistant-service
+  - Call for Code Dev
   env:
     NPM_CONFIG_PRODUCTION: false
