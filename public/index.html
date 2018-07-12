@@ -50,16 +50,13 @@
   <script src="js/global.js"></script>
   <script src="js/analytics.js"></script>
   <script>
-function yesAnswer() {
+
+function myoption(p1) {
 var latestResponse = Api.getResponsePayload();
 var context = latestResponse.context;
-Api.sendRequest("yes", context);
+Api.sendRequest(p1, context);
 }
-function noAnswer() {
-var latestResponse = Api.getResponsePayload();
-var context = latestResponse.context;
-Api.sendRequest("no", context);
-}
+
 </script>
 </body>
 
